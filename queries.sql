@@ -30,3 +30,4 @@ select o.id as OrderID, c.CompanyName as Customer, e.LastName as Employee
 from [order] as o
 join Customer as c on o.CustomerId = c.Id
 join Employee as e on o.EmployeeId = e.Id;
+
