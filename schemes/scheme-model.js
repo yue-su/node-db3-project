@@ -3,8 +3,8 @@ const db = require("../data/dbconfig")
 const find = () => {
   return db("schemes")
 }
-const findById = () => {
-  db("schemes")
+const findById = (id) => {
+  return db("schemes").where('id', id)
 }
 const add = () => {
   db("schemes")
